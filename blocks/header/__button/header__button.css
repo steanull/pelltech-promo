@@ -1,0 +1,30 @@
+.header__button {
+    background-color: #ee2e2a;
+    border-radius: 50%;
+    width: 130px;
+    min-height: 130px;
+    margin: 50px 0 40px 120px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    z-index: 99;
+    cursor: pointer;
+    border:0;
+    background-clip:padding-box;
+    transform-origin:center;
+    transition: .5s;
+    animation:annoying 1.4s ease-in infinite alternate;
+}
+
+.header__button:hover {
+    background-color: black;
+}
+
+@keyframes annoying{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.1);
+    }
+}

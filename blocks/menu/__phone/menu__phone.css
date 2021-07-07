@@ -1,0 +1,12 @@
+.menu__phone {
+    margin: 0 30px;
+    color: #ee2e2a;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.menu__phone:hover {
+    color: #000000;
+}

@@ -1,0 +1,10 @@
+.header__line {
+    background-image: url(../../../images/line-bg.svg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 120px;
+    width: 1100px;
+    min-height: 800px;
+}

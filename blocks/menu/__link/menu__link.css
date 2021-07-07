@@ -1,0 +1,22 @@
+.menu__link {
+    text-decoration: none;
+    color: #000;
+    transition: .5s;
+}
+
+.menu__link:after {
+    background-color: #ee2e2a;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0;
+    transition: width .3s ease-in-out;
+}
+.menu__link:hover:after,
+.menu__link:focus:after {
+    width: 100%;
+}
+
+.menu__link:hover {
+    color: #ee2e2a;
+}
