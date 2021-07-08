@@ -7,5 +7,5 @@
     grid-template-rows: repeat(2, minmax(min-content, max-content));
     grid-auto-rows: 1fr;
     justify-content: space-between;
-    gap: 50px 120px;
+    gap: 20px 120px;
 }

@@ -1,0 +1,13 @@
+.callback__button {
+    background-color: #ee2e2a;
+    border: 0;
+    color: #ffffff;
+    padding: 10px;
+    cursor:pointer;
+    margin-top: 10px;
+    transition: .5s;
+}
+
+.callback__button:hover {
+    background-color: #606062;
+}

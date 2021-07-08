@@ -1,0 +1,17 @@
+.callback__input {
+    outline: none;
+    width: 300px;
+    font-size: 14px;
+    border:0;
+    padding: 6px 0 4px;
+    margin:  0 0 20px;
+    border-bottom: 2px solid #606062;
+    background: #fff;
+    transition: .4s;
+
+}
+
+.callback__input:focus {
+    outline: none;
+    border-bottom: 2px solid #ee2e2a;
+}

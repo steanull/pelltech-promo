@@ -2,6 +2,7 @@
 @import url("../blocks/page/__header/page__header.css");
 @import url("../blocks/page/__about/page__about.css");
 @import url("../blocks/page/__adavantages/page__advantages.css");
+@import url("../blocks/page/__callback/page__callback.css");
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__logo/header__logo.css");
 @import url("../blocks/header/__title/header__title.css");
@@ -38,3 +39,19 @@
 @import url("../blocks/advantages/__list/advantages__list.css");
 @import url("../blocks/advantages/__subtitle/advantages__subtitle.css");
 @import url("../blocks/advantages/__slogan/advantages__slogan.css");
+@import url("../blocks/callback/callback.css");
+@import url("../blocks/callback/__title/callback__title.css");
+@import url("../blocks/callback/__accent/callback__accent_large.css");
+@import url("../blocks/callback/__accent/callback__accent_medium.css");
+@import url("../blocks/callback/__description/callback__description.css");
+@import url("../blocks/callback/__line/callback__line.css");
+@import url("../blocks/callback/__link/callback__link.css");
+@import url("../blocks/callback/__form/callback__form.css");
+@import url("../blocks/callback/__input/callback__input.css");
+@import url("../blocks/callback/__button/callback__button.css");
+@import url("../blocks/callback/__alt/callback__alt.css");
+
+::selection {
+    background-color: #ee2e2a;
+    color: #ffffff;
+}
