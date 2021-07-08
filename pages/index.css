@@ -1,6 +1,7 @@
 @import url("../blocks/page/page.css");
 @import url("../blocks/page/__header/page__header.css");
 @import url("../blocks/page/__about/page__about.css");
+@import url("../blocks/page/__adavantages/page__advantages.css");
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__logo/header__logo.css");
 @import url("../blocks/header/__title/header__title.css");
@@ -29,3 +30,11 @@
 @import url("../blocks/text-card/_fadein/text-card_fadein-right.css");
 @import url("../blocks/image-card/image-card.css");
 @import url("../blocks/image-card/__image/image-card__image.css");
+@import url("../blocks/advantages/advantages.css");
+@import url("../blocks/advantages/__title/advantages_title.css");
+@import url("../blocks/advantages/__description/advantages__description.css");
+@import url("../blocks/advantages/__icon/advantages__icon.css");
+@import url("../blocks/advantages/__item/advantages__item.css");
+@import url("../blocks/advantages/__list/advantages__list.css");
+@import url("../blocks/advantages/__subtitle/advantages__subtitle.css");
+@import url("../blocks/advantages/__slogan/advantages__slogan.css");
