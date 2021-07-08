@@ -1,0 +1,27 @@
+.header__control {
+    background-color: #ee2e2a;
+    border-radius: 50%;
+    width: 40px;
+    min-height: 40px;
+    position: absolute;
+    top: calc(100vh - 70px);
+    left: 50%;
+    margin-left: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color:#ffffff;
+    text-transform: uppercase;
+    z-index: 99;
+    cursor: pointer;
+    border: 0;
+    background-clip: padding-box;
+    transform-origin: center;
+    transition: .5s;
+    opacity: .5;
+}
+
+.header__control:hover {
+    background-color: black;
+}
