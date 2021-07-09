@@ -1,4 +1,6 @@
 .slider__image {
     width: 100%;
     pointer-events: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }

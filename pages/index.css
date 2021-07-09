@@ -67,6 +67,11 @@
 @import url("../blocks/slider/__accent/slider__accent.css");
 @import url("../blocks/slider/__nameplate/slider__nameplate.css");
 @import url("../blocks/objects/objects.css");
+@import url("../blocks/objects/__title/objects__title.css");
+@import url("../blocks/objects/__accent/objects__accent.css");
+@import url("../blocks/footer/footer.css");
+@import url("../blocks/footer/__inner/footer__inner.css");
+@import url("../blocks/footer/__link/footer__link.css");
 
 ::selection {
     background-color: #ee2e2a;

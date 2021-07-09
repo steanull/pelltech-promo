@@ -6,6 +6,7 @@
     cursor:pointer;
     margin-top: 10px;
     transition: .5s;
+    border-radius: 4px;
 }
 
 .callback__button:hover {
