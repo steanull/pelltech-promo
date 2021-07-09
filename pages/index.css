@@ -3,6 +3,7 @@
 @import url("../blocks/page/__about/page__about.css");
 @import url("../blocks/page/__adavantages/page__advantages.css");
 @import url("../blocks/page/__callback/page__callback.css");
+@import url("../blocks/page/__objects/page__objects.css");
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__logo/header__logo.css");
 @import url("../blocks/header/__title/header__title.css");
@@ -50,6 +51,22 @@
 @import url("../blocks/callback/__input/callback__input.css");
 @import url("../blocks/callback/__button/callback__button.css");
 @import url("../blocks/callback/__alt/callback__alt.css");
+@import url("../blocks/slider/slider.css");
+@import url("../blocks/slider/slider.css");
+@import url("../blocks/slider/slider_disable-transition.css");
+@import url("../blocks/slider/__container/slider__container.css");
+@import url("../blocks/slider/__control/slider__control.css");
+@import url("../blocks/slider/__indicators/slider__indicators.css");
+@import url("../blocks/slider/__item/slider__item.css");
+@import url("../blocks/slider/__items/slider__items.css");
+@import url("../blocks/slider/__item-content/slider__item-content.css");
+@import url("../blocks/slider/__image/slider__image.css");
+@import url("../blocks/slider/__content-inner/slider__content-inner.css");
+@import url("../blocks/slider/__title/slider__title.css");
+@import url("../blocks/slider/__description/slider__description.css");
+@import url("../blocks/slider/__accent/slider__accent.css");
+@import url("../blocks/slider/__nameplate/slider__nameplate.css");
+@import url("../blocks/objects/objects.css");
 
 ::selection {
     background-color: #ee2e2a;

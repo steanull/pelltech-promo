@@ -1,0 +1,11 @@
+.slider__nameplate {
+    position: absolute;
+    top: 60%;
+    color: #fff;
+    background-color: rgba(238, 46, 42, .8);
+    padding: 10px 20px 10px 35px;
+    font-weight: 900;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}

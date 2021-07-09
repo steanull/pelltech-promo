@@ -1,0 +1,6 @@
+.slider__content-inner {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 30px;
+    position: relative;
+}

@@ -1,5 +1,7 @@
 .callback__form {
     display: flex;
+    max-width: 240px;
+    width: 100%;
     flex-direction: column;
     margin: 0;
     padding: 0;

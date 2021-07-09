@@ -1,0 +1,4 @@
+.slider__image {
+    width: 100%;
+    pointer-events: none;
+}
