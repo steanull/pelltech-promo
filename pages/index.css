@@ -1,9 +1,11 @@
+@import url("../fonts/fonts.css");
 @import url("../blocks/page/page.css");
 @import url("../blocks/page/__header/page__header.css");
 @import url("../blocks/page/__about/page__about.css");
 @import url("../blocks/page/__adavantages/page__advantages.css");
 @import url("../blocks/page/__callback/page__callback.css");
 @import url("../blocks/page/__objects/page__objects.css");
+@import url("../blocks/page/__service/page__service.css");
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__logo/header__logo.css");
 @import url("../blocks/header/__title/header__title.css");
@@ -69,6 +71,14 @@
 @import url("../blocks/objects/objects.css");
 @import url("../blocks/objects/__title/objects__title.css");
 @import url("../blocks/objects/__accent/objects__accent.css");
+@import url("../blocks/service/service.css");
+@import url("../blocks/service/__title/service__title.css");
+@import url("../blocks/service/__action/service__action.css");
+@import url("../blocks/service/__subtitle/service__subtitle.css");
+@import url("../blocks/service/__description/service__description.css");
+@import url("../blocks/service/__list/service__list.css");
+@import url("../blocks/service/__item/service__item.css");
+@import url("../blocks/service/__icon/service__icon.css");
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/footer/__inner/footer__inner.css");
 @import url("../blocks/footer/__link/footer__link.css");

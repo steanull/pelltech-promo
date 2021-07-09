@@ -1,0 +1,11 @@
+.service__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, minmax(min-content, max-content));
+    grid-auto-rows: 1fr;
+    justify-content: space-between;
+    gap: 20px 60px;
+}
