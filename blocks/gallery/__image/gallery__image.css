@@ -1,0 +1,14 @@
+.gallery__image {
+    max-width: 280px;
+    width: 100%;
+    border-radius: 6px;
+    height: 400px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .5s;
+    border: 2px solid rgba(34, 60, 80, 0.07);
+}
+
+.gallery__image:hover {
+    opacity: .4;
+}

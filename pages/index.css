@@ -1,4 +1,5 @@
 @import url("../fonts/fonts.css");
+@import url("../vendor/photoswipe.css");
 @import url("../blocks/page/page.css");
 @import url("../blocks/page/__header/page__header.css");
 @import url("../blocks/page/__about/page__about.css");
@@ -6,6 +7,7 @@
 @import url("../blocks/page/__callback/page__callback.css");
 @import url("../blocks/page/__objects/page__objects.css");
 @import url("../blocks/page/__service/page__service.css");
+@import url("../blocks/page/__gallery/page__gallery.css");
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__logo/header__logo.css");
 @import url("../blocks/header/__title/header__title.css");
@@ -58,7 +60,6 @@
 @import url("../blocks/callback/__button/callback__button.css");
 @import url("../blocks/callback/__alt/callback__alt.css");
 @import url("../blocks/slider/slider.css");
-@import url("../blocks/slider/slider.css");
 @import url("../blocks/slider/slider_disable-transition.css");
 @import url("../blocks/slider/__container/slider__container.css");
 @import url("../blocks/slider/__control/slider__control.css");
@@ -83,6 +84,11 @@
 @import url("../blocks/service/__list/service__list.css");
 @import url("../blocks/service/__item/service__item.css");
 @import url("../blocks/service/__icon/service__icon.css");
+@import url("../blocks/gallery/gallery.css");
+@import url("../blocks/gallery/__image/gallery__image.css");
+@import url("../blocks/gallery/__inner/gallery__inner.css");
+@import url("../blocks/gallery/__title/gallery__title.css");
+@import url("../blocks/gallery/__accent/gallery__accent.css");
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/footer/__inner/footer__inner.css");
 @import url("../blocks/footer/__link/footer__link.css");

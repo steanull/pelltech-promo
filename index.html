@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Промышленные пеллетные котельные большой мощности Pelltech</title>
+    <meta name="description" content="Промышленные и блочно-модульные пеллетные котельные на оборудовании компании Pelltech. Мы производим промышленные котельные от 100 кВт до 20 000 кВт." />
+    <meta name="keywords" content="Блочно-модульные котельные Pelltech" />
     <link rel="stylesheet" href="pages/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -32,7 +34,7 @@
         <div class="header__viewer">
             <div
                     class="cloudimage-360"
-                    data-folder="https://pelltech.store/image/catalog/bmk/"
+                    data-folder="https://pelltech.net/images/bmk/"
                     data-filename="bmk_{index}.png"
                     data-amount="72"
                     data-magnifier="3"
@@ -357,6 +359,29 @@
         </form>
     </div>
 </section>
+<section class="gallery page__gallery">
+    <h2 class="gallery__title">Наши <span class="gallery__accent">сертификаты</span> соответствия</h2>
+    <div class="gallery__inner pswp-gallery pswp-gallery--single-column" id="gallery--simple">
+        <a href="images/sertificat-1.png"
+           data-pswp-width="1669"
+           data-pswp-height="2500"
+           target="_blank">
+            <img class="gallery__image" src="images/sertificat-1.png" alt="Официальный пердставитель"/>
+        </a>
+        <a href="images/sertificat-2.png"
+           data-pswp-width="1669"
+           data-pswp-height="2500"
+           target="_blank">
+            <img class="gallery__image" src="images/sertificat-2.png" alt="Официальный пердставитель"/>
+        </a>
+        <a href="images/sertificat-3.png"
+           data-pswp-width="1669"
+           data-pswp-height="2500"
+           target="_blank">
+            <img class="gallery__image" src="images/sertificat-3.png" alt="Официальный пердставитель"/>
+        </a>
+    </div>
+</section>
 <section class="service page__service">
     <ul class="service__list">
         <li class="service__item">
@@ -388,6 +413,21 @@
         <a href="#" class="footer__link">Политика конфиденциальности</a>
     </div>
 </footer>
+<script src="script/photoswipe-lightbox.esm.min.js"></script>
+<script src="script/photoswipe.esm.min.js"></script>
+<script type="module">
+    import PhotoSwipeLightbox from 'https://pelltech.net/script/photoswipe-lightbox.esm.min.js';
+    const lightbox = new PhotoSwipeLightbox({
+        // may select multiple "galleries"
+        gallerySelector: '#gallery--simple',
+
+        // Elements within gallerySelector (slides)
+        childSelector: 'a',
+        pswpModule: 'https://pelltech.net/script/photoswipe.esm.min.js',
+        pswpCSS: 'https://pelltech.net/vendor/photoswipe.css'
+    });
+    lightbox.init();
+</script>
 <script src="script/js-cloudimage-360-view.min.js"></script>
 <script src="script/chiefslider.min.js"></script>
 <script>
