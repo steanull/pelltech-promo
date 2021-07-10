@@ -1,6 +1,12 @@
 .text-card__title {
     margin: 26px 0 16px;
     font-size: 24px;
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
+}
 
+@media screen and (max-width: 900px) {
+    .text-card__title {
+        font-size: 20px;
+    }
 }

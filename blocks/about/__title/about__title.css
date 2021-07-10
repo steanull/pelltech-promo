@@ -1,6 +1,16 @@
 .about__title {
     text-align: center;
-    width: 560px;
+    max-width: 560px;
+    width: 100%;
     font-size: 32px;
     margin: 50px auto;
+}
+
+@media screen and (max-width: 900px) {
+    .about__title {
+        font-size: 24px;
+        max-width: 280px;
+        padding: 0 20px;
+        margin: 30px auto;
+    }
 }

@@ -1,4 +1,14 @@
 .text-card {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     position: relative;
+}
+
+@media screen and (max-width: 900px) {
+    .text-card {
+        max-width: 100%;
+        min-height: auto;
+        box-sizing: border-box;
+        padding: 0 25px;
+    }
 }

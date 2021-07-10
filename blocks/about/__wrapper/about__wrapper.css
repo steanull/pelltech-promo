@@ -9,3 +9,17 @@
     padding: 0;
     gap: 50px 200px;
 }
+
+@media screen and (max-width: 1200px) {
+    .about__wrapper {
+        gap: 50px 50px;
+        box-sizing: border-box;
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about__wrapper {
+        grid-template-columns: 1fr;
+    }
+}

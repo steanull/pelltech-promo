@@ -5,3 +5,10 @@
     font-weight: 400;
     color: #606062;
 }
+
+@media screen and (max-width: 900px) {
+    .text-card__description {
+        line-height: 24px;
+        font-size: 14px;
+    }
+}

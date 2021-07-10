@@ -1,9 +1,20 @@
 .image-card {
-    width: 470px;
+    max-width: 470px;
     min-height: 370px;
     position: relative;
     background-image: url("../../images/dots.svg");
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: 90%;
+}
+
+@media screen and (max-width: 900px) {
+    .image-card {
+        max-width: 100%;
+        min-height: auto;
+        box-sizing: border-box;
+        padding: 0 25px;
+        background-size: 80%;
+        background-image: none;
+    }
 }
