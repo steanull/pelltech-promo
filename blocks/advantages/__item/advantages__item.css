@@ -2,3 +2,14 @@
     margin: 0;
     padding: 0;
 }
+
+@media screen and (max-width: 800px) {
+    .advantages__item {
+        margin: 0 0 0 30px;
+        padding: 0;
+    }
+
+    .advantages__item:first-of-type {
+        margin: 0;
+    }
+}

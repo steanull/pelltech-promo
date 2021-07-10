@@ -4,3 +4,17 @@
     position: absolute;
     margin: 10px 0 0 -70px;
 }
+
+@media screen and (max-width: 1200px) {
+    .advantages__icon {
+        height: 55px;
+        margin: 10px 0 0 -50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .advantages__icon {
+        height: 70px;
+        margin: 10px 0 0 -70px;
+    }
+}

@@ -8,12 +8,17 @@
     background-size: 90%;
 }
 
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .image-card {
+        padding: 0 25px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .image-card {
         max-width: 100%;
         min-height: auto;
         box-sizing: border-box;
-        padding: 0 25px;
         background-size: 80%;
         background-image: none;
     }

@@ -9,3 +9,19 @@
     justify-content: space-between;
     gap: 20px 120px;
 }
+
+@media screen and (max-width: 1200px) {
+    .advantages__list {
+        gap: 50px 50px;
+        box-sizing: border-box;
+        padding: 25px 60px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .advantages__list {
+        grid-template-columns: 1fr;
+        gap: 10px 10px;
+        padding: 30px 40px;
+    }
+}

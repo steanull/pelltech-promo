@@ -3,3 +3,17 @@
     font-size: 16px;
     line-height: 24px;
 }
+
+@media screen and (max-width: 1200px) {
+    .advantages__description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .advantages__description {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

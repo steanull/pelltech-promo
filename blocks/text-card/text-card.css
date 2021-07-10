@@ -4,11 +4,16 @@
     position: relative;
 }
 
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .text-card {
+        padding: 0 25px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .text-card {
         max-width: 100%;
         min-height: auto;
         box-sizing: border-box;
-        padding: 0 25px;
     }
 }
