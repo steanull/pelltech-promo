@@ -4,7 +4,20 @@
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
-    top: 78px;
-    width: 790px;
+    top: 8px;
+    width: 900px;
     min-height: 800px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1600px) {
+    .header__line {
+        top: -135px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header__line {
+        display: none;
+    }
 }

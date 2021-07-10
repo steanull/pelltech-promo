@@ -12,6 +12,7 @@
     width: 0;
     transition: width .3s ease-in-out;
 }
+
 .menu__link:hover:after,
 .menu__link:focus:after {
     width: 100%;
@@ -19,4 +20,14 @@
 
 .menu__link:hover {
     color: #ee2e2a;
+}
+
+@media screen and (max-width: 900px) {
+    .menu__link {
+        color: #fff;
+    }
+
+    .menu__link:hover {
+        color: #ffffff;
+    }
 }

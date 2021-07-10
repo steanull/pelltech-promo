@@ -1,0 +1,17 @@
+@media screen and (max-width: 899px) {
+    .menu__bar {
+        position: absolute;
+        right: 40px;
+        top: 100px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 99999;
+    }
+}
+
+@media (min-width: 900px) {
+    .menu__bar {
+        display: none;
+    }
+}

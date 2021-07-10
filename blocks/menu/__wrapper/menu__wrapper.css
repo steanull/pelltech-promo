@@ -1,0 +1,26 @@
+@media screen and (max-width: 900px) {
+    .menu__wrapper {
+        width: 300px;
+        height: auto;
+        background: #ee2e2a;
+        color: #ffffff;
+        padding: 10px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: fixed;
+        left: -320px;
+        top: 60px;
+        transition: left 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        z-index: 999999;
+    }
+
+    .menu__wrapper.animate {
+        left: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    .menu__wrapper {
+        width: 220px;
+    }
+}

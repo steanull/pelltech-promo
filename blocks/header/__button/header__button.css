@@ -7,7 +7,7 @@
     color: #ffffff;
     text-transform: uppercase;
     font-size: 14px;
-    z-index: 99;
+    z-index: 9999;
     cursor: pointer;
     border:0;
     background-clip:padding-box;
@@ -18,6 +18,12 @@
 
 .header__button:hover {
     background-color: black;
+}
+
+@media screen and (max-width: 900px) {
+    .header__button {
+        margin: 20px 0 20px 120px;
+    }
 }
 
 @keyframes annoying{

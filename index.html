@@ -8,25 +8,37 @@
 </head>
 <body class="page">
 <header class="header page__header">
-    <nav class="menu">
+    <div class="menu">
         <a href="#"><img class="header__logo" src="images/logo.svg" alt="Pelltech"></a>
-        <ul class="menu__list">
-            <li class="menu__item"><a href="#about-us" class="menu__link">О нас</a></li>
-            <li class="menu__item"><a href="#advantages" class="menu__link">Преимущества</a></li>
-            <li class="menu__item"><a href="#objects" class="menu__link">Объекты</a></li>
-            <li class="menu__item"><a href="#video" class="menu__link">Видео</a></li>
-            <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
-        </ul>
+        <div class="menu__bar">
+            <span class="menu__burger"></span>
+        </div>
+        <nav class="menu__wrapper">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#about-us" class="menu__link">О нас</a></li>
+                <li class="menu__item"><a href="#advantages" class="menu__link">Преимущества</a></li>
+                <li class="menu__item"><a href="#objects" class="menu__link">Объекты</a></li>
+                <li class="menu__item"><a href="#video" class="menu__link">Видео</a></li>
+                <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+            </ul>
+        </nav>
         <a href="tel:+74951288831" class="menu__phone">+7 495 1288831</a>
-    </nav>
+    </div>
     <article class="header__bmk">
         <h1 class="header__title"><span class="header__slogan">Нет газа?</span> Больше не проблема!</h1>
         <p class="header__description">Сократите расходы на отоплении до 40% с помощью нашей промышленной пеллетной
             котельной</p>
         <button class="header__button">Связаться с&nbsp;нами</button>
-        <img src="images/bmk-bg.png" alt="Модульная котельная" class="header__main-illustration">
+        <div class="header__viewer">
+            <div
+                    class="cloudimage-360"
+                    data-folder="https://pelltech.store/image/catalog/bmk/"
+                    data-filename="bmk_{index}.png"
+                    data-amount="72"
+                    data-magnifier="3"
+            ></div>
+        </div>
         <div class="header__line"></div>
-        <div class="header__control">&darr;</div>
     </article>
 </header>
 <section class="about page__about" id="about-us">
@@ -353,17 +365,20 @@
         <li class="service__item">
             <img src="images/shield-gar.svg" alt="Защита" class="service__icon">
             <h4 class="service__subtitle">Гарантия</h4>
-            <p class="service__description">Наша компания предоставляет гарантию на отопительное оборудование, что дает нашим клиентам как минимум на этот срок забыть о проблемах с отоплением.</p>
+            <p class="service__description">Наша компания предоставляет гарантию на отопительное оборудование, что дает
+                нашим клиентам как минимум на этот срок забыть о проблемах с отоплением.</p>
         </li>
         <li class="service__item">
             <img src="images/chek_list.svg" alt="КПД" class="service__icon">
             <h4 class="service__subtitle">Обслуживание котлов</h4>
-            <p class="service__description">Нет необходимости проводить обслуживание самостоятельно. Доверьтесь профессионалам. Наша компания выполнит всю работу, для продления жизни котлу.</p>
+            <p class="service__description">Нет необходимости проводить обслуживание самостоятельно. Доверьтесь
+                профессионалам. Наша компания выполнит всю работу, для продления жизни котлу.</p>
         </li>
         <li class="service__item">
             <img src="images/cog.svg" alt="Автоматизация" class="service__icon">
             <h4 class="service__subtitle">Ремонт</h4>
-            <p class="service__description">Оперативно приедем на объект, проведем диагностику, выявим неисправность оборудования, устраним неполадку, заменим сломанные узлы оборудования.</p>
+            <p class="service__description">Оперативно приедем на объект, проведем диагностику, выявим неисправность
+                оборудования, устраним неполадку, заменим сломанные узлы оборудования.</p>
         </li>
     </ul>
 </section>
@@ -373,12 +388,19 @@
         <a href="#" class="footer__link">Политика конфиденциальности</a>
     </div>
 </footer>
+<script src="script/js-cloudimage-360-view.min.js"></script>
 <script src="script/chiefslider.min.js"></script>
 <script>
     const $sliders = document.querySelectorAll('[data-slider="chiefslider"]');
     $sliders.forEach(function ($slider) {
         new ChiefSlider($slider);
     });
+</script>
+<script>
+    document.querySelector('.menu__bar').addEventListener('click', function () {
+        document.querySelector('.menu__bar span').classList.toggle('active');
+        document.querySelector('.menu__wrapper').classList.toggle('animate');
+    })
 </script>
 </body>
 </html>

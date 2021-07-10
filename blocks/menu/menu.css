@@ -6,3 +6,15 @@
     align-items: center;
     min-height: 120px;
 }
+
+@media (max-width: 500px) {
+    .menu {
+        min-height: 70px;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu {
+        min-height: 90px;
+    }
+}

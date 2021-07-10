@@ -2,3 +2,9 @@
     max-width: 1184px;
     width: 100%;
 }
+
+@media screen and (max-width: 980px) {
+    .about {
+        display:none;
+    }
+}

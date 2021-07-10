@@ -1,0 +1,36 @@
+.header__viewer {
+    position: absolute;
+    z-index: 99;
+    margin-top: 0;
+    max-width: 1200px;
+    width: 100%;
+    right: 0;
+    cursor: grab;
+}
+
+@media screen and (max-width: 1600px) {
+    .header__viewer {
+        max-width: 900px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header__viewer {
+        max-width: 600px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 900px) {
+    .header__viewer {
+        max-width: 500px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 772px) {
+    .header__viewer {
+        display: none;
+    }
+}

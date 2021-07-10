@@ -5,4 +5,25 @@
     width: 100%;
     color: #606062;
     margin: 0 0 0 100px;
+    z-index: 9999;
+}
+
+@media screen and (max-width: 900px) {
+    .header__description {
+        font-size: 16px;
+        max-width: 320px;
+        padding: 15px 40px;
+        line-height: 24px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header__description {
+        font-size: 16px;
+        max-width: 270px;
+        padding: 15px 25px;
+        line-height: 24px;
+        margin: 0;
+    }
 }

@@ -2,3 +2,21 @@
     font-size: 72px;
     color: #ee2e2a;
 }
+
+@media screen and (max-width: 1600px) {
+    .header__slogan {
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header__slogan {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header__slogan  {
+        font-size: 36px;
+    }
+}
