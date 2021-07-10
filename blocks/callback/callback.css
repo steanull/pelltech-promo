@@ -10,8 +10,16 @@
     gap: 50px 120px;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1200px) {
     .callback {
-        display:none;
+        gap: 50px 50px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .callback {
+        gap: 20px 20px;
+        grid-template-columns: 1fr;
     }
 }
