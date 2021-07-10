@@ -3,8 +3,16 @@
     width: 100%;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 900px) {
     .objects {
-        display:none;
+        max-width: 1150px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .objects {
+        max-width: 1150px;
+        width: 80%;
     }
 }

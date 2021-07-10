@@ -1,3 +1,10 @@
 .slider {
     position: relative;
 }
+
+@media screen and (max-width: 1250px) {
+    .slider {
+        max-width: 90%;
+        margin: auto;
+    }
+}
