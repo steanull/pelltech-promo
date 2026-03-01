@@ -47,10 +47,9 @@
         <div class="header__viewer">
             <div
                     class="cloudimage-360"
-                    data-folder="https://pelltech.net/images/bmk/"
+                    data-folder="images/bmk/"
                     data-filename="bmk_{index}.png"
                     data-amount="36"
-                    data-magnifier="3"
             ></div>
         </div>
         <div class="header__line"></div>
@@ -442,6 +441,11 @@
     lightbox.init();
 </script>
 <script src="script/js-cloudimage-360-view.min.js"></script>
+<script>
+    if (window.CI360 && typeof window.CI360.init === 'function') {
+        window.CI360.init();
+    }
+</script>
 <script src="script/chiefslider.min.js"></script>
 <script>
     const $sliders = document.querySelectorAll('[data-slider="chiefslider"]');

@@ -1,0 +1,31 @@
+name: Quality Check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate repository hygiene
+        run: |
+          if git ls-files | grep -q '^.idea/'; then
+            echo ".idea files are tracked in git. Remove them from version control."
+            exit 1
+          fi
+          test -f README.md
+          test -f LICENSE
+          test -f index.html
+
+      - name: Validate required HTML metadata
+        run: |
+          grep -qi '<!DOCTYPE html>' index.html
+          grep -qi '<title>' index.html
+          grep -qi 'meta name="description"' index.html
+          grep -qi 'meta name="viewport"' index.html
