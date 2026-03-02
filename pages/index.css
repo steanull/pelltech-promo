@@ -1,5 +1,4 @@
 @import url("../fonts/fonts.css");
-@import url("../vendor/photoswipe.css");
 @import url("../blocks/page/page.css");
 @import url("../blocks/page/__header/page__header.css");
 @import url("../blocks/page/__about/page__about.css");
@@ -89,6 +88,7 @@
 @import url("../blocks/gallery/__inner/gallery__inner.css");
 @import url("../blocks/gallery/__title/gallery__title.css");
 @import url("../blocks/gallery/__accent/gallery__accent.css");
+@import url("../blocks/gallery/__popup/gallery__popup.css");
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/footer/__inner/footer__inner.css");
 @import url("../blocks/footer/__link/footer__link.css");
