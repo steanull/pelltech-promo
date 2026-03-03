@@ -50,6 +50,130 @@
 })();
 
 (() => {
+    const form = document.querySelector('.callback__form');
+
+    if (!form) {
+        return;
+    }
+
+    const nameInput = form.querySelector('input[name="name"]');
+    const phoneInput = form.querySelector('input[name="phone"]');
+
+    if (!nameInput || !phoneInput) {
+        return;
+    }
+
+    const createToast = () => {
+        const toast = document.createElement('div');
+        toast.className = 'callback-toast';
+        toast.setAttribute('role', 'alert');
+        toast.setAttribute('aria-live', 'assertive');
+        document.body.appendChild(toast);
+        return toast;
+    };
+
+    const toast = createToast();
+    let hideToastTimer;
+
+    const showToast = (messages) => {
+        toast.innerHTML = messages.map((message) => `<p class="callback-toast__line">${message}</p>`).join('');
+        toast.classList.add('callback-toast_visible');
+        clearTimeout(hideToastTimer);
+        hideToastTimer = setTimeout(() => {
+            toast.classList.remove('callback-toast_visible');
+        }, 4000);
+    };
+
+    const getPhoneDigits = (value) => {
+        let digits = value.replace(/\D/g, '');
+
+        if (digits.startsWith('7') || digits.startsWith('8')) {
+            digits = digits.slice(1);
+        }
+
+        return digits.slice(0, 10);
+    };
+
+    const formatPhone = (digitsValue) => {
+        const digits = getPhoneDigits(digitsValue);
+        let result = '+7';
+
+        if (digits.length > 0) {
+            result += ` (${digits.slice(0, 3)}`;
+        }
+
+        if (digits.length >= 3) {
+            result += ')';
+        }
+
+        if (digits.length > 3) {
+            result += ` ${digits.slice(3, 6)}`;
+        }
+
+        if (digits.length > 6) {
+            result += `-${digits.slice(6, 8)}`;
+        }
+
+        if (digits.length > 8) {
+            result += `-${digits.slice(8, 10)}`;
+        }
+
+        return result;
+    };
+
+    const toggleError = (input, hasError) => {
+        input.classList.toggle('callback__input_error', hasError);
+    };
+
+    phoneInput.addEventListener('focus', () => {
+        if (!phoneInput.value.trim()) {
+            phoneInput.value = '+7';
+        }
+    });
+
+    phoneInput.addEventListener('input', () => {
+        phoneInput.value = formatPhone(phoneInput.value);
+        toggleError(phoneInput, false);
+    });
+
+    phoneInput.addEventListener('blur', () => {
+        if (getPhoneDigits(phoneInput.value).length === 0) {
+            phoneInput.value = '';
+        }
+    });
+
+    nameInput.addEventListener('input', () => {
+        toggleError(nameInput, false);
+    });
+
+    form.addEventListener('submit', (event) => {
+        const errors = [];
+        const isNameEmpty = !nameInput.value.trim();
+        const phoneDigitsLength = getPhoneDigits(phoneInput.value).length;
+        const isPhoneEmpty = phoneDigitsLength === 0;
+        const isPhoneIncomplete = !isPhoneEmpty && phoneDigitsLength < 10;
+
+        toggleError(nameInput, isNameEmpty);
+        toggleError(phoneInput, isPhoneEmpty || isPhoneIncomplete);
+
+        if (isNameEmpty) {
+            errors.push('Заполните поле "Имя".');
+        }
+
+        if (isPhoneEmpty) {
+            errors.push('Заполните поле "Телефон".');
+        } else if (isPhoneIncomplete) {
+            errors.push('Введите телефон полностью: +7 (999) 999-99-99.');
+        }
+
+        if (errors.length) {
+            event.preventDefault();
+            showToast(errors);
+        }
+    });
+})();
+
+(() => {
     const gallery = document.querySelector('.gallery__inner');
 
     if (!gallery) {

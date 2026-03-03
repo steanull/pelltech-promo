@@ -365,11 +365,11 @@
   <div>
     <div class="callback__line"></div>
     <p class="callback__alt">Перезвоним в&nbsp;течение <span class="callback__accent_medium">15&nbsp;минут</span></p>
-    <form class="callback__form" name="new">
+    <form class="callback__form" name="new" novalidate>
       <label class="callback__description" for="name"></label>
-      <input type="text" name="name" id="name" class="callback__input" placeholder="Имя">
+      <input type="text" name="name" id="name" class="callback__input" autocomplete="name" required placeholder="Имя">
       <label class="callback__description" for="number"></label>
-      <input type="number" name="phone" id="number" class="callback__input" placeholder="+7(999)999-99-99">
+      <input type="tel" name="phone" id="number" class="callback__input" inputmode="tel" autocomplete="tel" required placeholder="+7(999)999-99-99">
       <button type="submit" class="callback__button">Заказать звонок</button>
     </form>
   </div>

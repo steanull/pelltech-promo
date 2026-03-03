@@ -10,6 +10,42 @@
     gap: 50px 120px;
 }
 
+.callback__input_error {
+    border-bottom-color: #ee2e2a;
+}
+
+.callback-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    max-width: min(360px, calc(100vw - 32px));
+    padding: 14px 16px;
+    border-radius: 8px;
+    background: rgba(31, 31, 31, 0.96);
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.callback-toast_visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.callback-toast__line {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+.callback-toast__line + .callback-toast__line {
+    margin-top: 8px;
+}
+
 @media screen and (max-width: 1200px) {
     .callback {
         gap: 50px 50px;
@@ -21,5 +57,12 @@
     .callback {
         gap: 20px 20px;
         grid-template-columns: 1fr;
+    }
+
+    .callback-toast {
+        top: 12px;
+        right: 12px;
+        left: 12px;
+        max-width: none;
     }
 }
