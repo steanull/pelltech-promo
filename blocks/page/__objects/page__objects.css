@@ -1,3 +1,9 @@
 .page__objects {
-    margin: 50px auto;
+    margin: 120px auto;
+}
+
+@media screen and (max-width: 567px) {
+  .page__objects {
+    margin: 70px auto;
+  }
 }

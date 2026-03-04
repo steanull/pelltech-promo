@@ -1,5 +1,7 @@
 .service__description {
-    color: #606062;
-    font-size: 14px;
-    line-height: 24px;
+  color: #606062;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  grid-area: 2 / 1 / 3 / 3;
 }

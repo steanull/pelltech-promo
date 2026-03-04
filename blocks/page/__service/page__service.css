@@ -1,3 +1,9 @@
 .page__service {
-    margin: 0 auto 50px;
+    margin: 120px auto;
+}
+
+@media screen and (max-width: 567px) {
+  .page__service {
+    margin: 70px auto;
+  }
 }

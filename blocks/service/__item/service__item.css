@@ -1,15 +1,19 @@
 .service__item {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: min-content;
+  gap: 20px 15px;
 }
 
 .service__item:first-of-type {
-    margin: 0;
-    width: 180px;
+  margin: 0;
+  width: 180px;
 }
 
-@media screen and (max-width: 900px) {
-    .service__item {
-        margin: 0 0 0 50px;
-    }
+@media screen and (max-width: 600px) {
+  .service__item {
+    grid-template-rows: min-content max-content;
+  }
 }

@@ -3,7 +3,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, minmax(min-content, max-content));
-    grid-auto-rows: 1fr;
     justify-content: space-between;
     margin: 0 auto;
     padding: 0;

@@ -42,3 +42,13 @@
 .slider__control[data-slide='prev']::before {
     background-image: url(../../../images/prev-button.png);
 }
+
+@media screen and (max-width: 1299px) {
+  .slider__control[data-slide='next'] {
+    right: -40px;
+  }
+
+  .slider__control[data-slide='prev'] {
+    left: -40px;
+  }
+}
