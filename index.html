@@ -418,7 +418,7 @@
 </section>
 <footer class="footer">
   <div class="footer__inner">
-    <p>&copy;&nbsp;2021 Pelltech</p>
+    <p>&copy;&nbsp;<span id="current-year">2021</span> Pelltech</p>
     <a href="#" class="footer__link">Политика конфиденциальности</a>
   </div>
 </footer>
@@ -430,6 +430,11 @@
 </script>
 <script src="script/chiefslider.min.js"></script>
 <script>
+  const yearEl = document.getElementById('current-year');
+  if (yearEl) {
+    yearEl.textContent = String(new Date().getFullYear());
+  }
+
   const $sliders = document.querySelectorAll('[data-slider="chiefslider"]');
   $sliders.forEach(function ($slider) {
     new ChiefSlider($slider);
