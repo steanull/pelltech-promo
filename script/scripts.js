@@ -1,7 +1,47 @@
 'use strict';
 
 (() => {
+    const init = () => {
+        const yearEl = document.getElementById('current-year');
+        if (yearEl) {
+            yearEl.textContent = String(new Date().getFullYear());
+        }
+
+        if (window.CI360 && typeof window.CI360.init === 'function') {
+            window.CI360.init();
+        }
+
+        if (typeof window.ChiefSlider === 'function') {
+            const sliders = document.querySelectorAll('[data-slider="chiefslider"]');
+            sliders.forEach((slider) => {
+                new window.ChiefSlider(slider);
+            });
+        }
+
+        const menuBar = document.querySelector('.menu__bar');
+        const burger = menuBar ? menuBar.querySelector('span') : null;
+        const menuWrapper = document.querySelector('.menu__wrapper');
+
+        if (menuBar && burger && menuWrapper) {
+            menuBar.addEventListener('click', () => {
+                burger.classList.toggle('active');
+                menuWrapper.classList.toggle('animate');
+            });
+        }
+    };
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init, { once: true });
+        return;
+    }
+
+    init();
+})();
+
+(() => {
     const menuLinks = document.querySelectorAll('.menu__link[href^="#"]');
+    const burger = document.querySelector('.menu__bar span');
+    const menuWrapper = document.querySelector('.menu__wrapper');
 
     if (!menuLinks.length) {
         return;
@@ -10,9 +50,6 @@
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const closeMobileMenu = () => {
-        const burger = document.querySelector('.menu__bar span');
-        const menuWrapper = document.querySelector('.menu__wrapper');
-
         if (burger) {
             burger.classList.remove('active');
         }
